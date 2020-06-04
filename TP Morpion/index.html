@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TP Simpion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+
+        <h1><  Morpion ></h1>
+
+        <div class="container">
+            
+            <div class="box" onClick="fStart()">
+
+                <div class="grille"></div>
+                <div class="grille"></div>
+                <div class="grille"></div>
+                <div class="grille"></div>
+                <div class="grille"></div>
+                <div class="grille"></div>
+                <div class="grille"></div>
+                <div class="grille"></div>
+                <div class="grille"></div>
+
+            </div>
+
+            <div class="infos">
+                <p class="scores-title">Scores</p>
+                <br>
+                <div id="divChrono">00:00:00</div>
+                <br>
+                <form id="formChrono">
+                   <input type="button" id="bStop" value="Stop" onClick="fStop()" />
+
+                   <input type="button" id="bDel" value="Remise à zéro" onClick="fReset()" />
+                </form>
+                <br>
+                <p id="player1" class="player1"><strong>X</strong> Joueur 1 : <span id="score1">0</span></p>
+                <br>
+                <p id="player2" class="player2"><strong>O</strong> Joueur 2 : <span id="score2">0</span></p>
+                <p id="scoreMessages" class="messages"></p>
+            </div>
+	    </div>
+    </div>
+
+
+    <script src="js/js.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class"container>
+        <h1>Simplon
+        <br>
+        < Morpion ></h1>
+    </div>
+   
+   <div class="container-fluid">
+        <h2>Sign into your account</h2>
+        <hr>
+        <div class="formulaire">
+            <form action="" method="post">
+                <p>
+                    Nom : <input type="text" name="nom" maxlength="50" />
+                    <input type="submit" value="Créer un joueur" name="creer" />
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <?php } ?>
+
+</body>
+</html>
+<?php
+// Si on a créé un personnage, on le stocke dans une variable session afin d'économiser une requête SQL.
+if (isset($perso)) {
+  $_SESSION['perso'] = $perso;
+}
